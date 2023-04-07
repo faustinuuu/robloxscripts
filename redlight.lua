@@ -34,6 +34,6 @@ lp:NewToggle("Fast Walk", "Flash walk speed", function(state)
     end
 end)
 
-lp:NewButton("Become Guard", "Become a Guard this match.", function()
+lp:NewButton("Infinity Yield", "Open an admin script (fly, jumppower, etc...)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
