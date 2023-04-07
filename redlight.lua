@@ -34,10 +34,6 @@ lp:NewToggle("Fast Walk", "Flash walk speed", function(state)
     end
 end)
 
-lp:NewToggle("Super Jump", "Jump super high", function(state)
-    if state then
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
-    else
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-    end
+lp:NewButton("Become Guard", "Become a Guard this match.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
