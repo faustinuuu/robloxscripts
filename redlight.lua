@@ -3,6 +3,7 @@ local Window = Library.CreateLib("Green Light Red Light Gamepasses - faustino#00
 local Gamepasses = Window:NewTab("Gamepasses")
 local LocalPlayer = Window:NewTab("LocalPlayer")
 
+-- Gamepasses
 local gp = Gamepasses:NewSection("Guard/Frontman")
 
 gp:NewButton("Become Frontman", "Become the Frontman this match.", function()
@@ -19,4 +20,24 @@ gp:NewButton("Become Guard", "Become a Guard this match.", function()
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("GuardRemotes"):WaitForChild("BecomeGuard"):InvokeServer(unpack(args))
+end)
+
+-- LocalPlayer
+
+local lp = LocalPlayer:NewSection("Movement")
+
+lp:NewToggle("Fast Walk", "Flash walk speed", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+lp:NewToggle("Super Jump", "Jump super high", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
 end)
