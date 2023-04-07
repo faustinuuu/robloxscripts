@@ -1,0 +1,21 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Green Light Red Light Gamepasses - faustino#0001", "DarkTheme")
+local Tab = Window:NewTab("Gamepasses")
+
+local Section = Tab:NewSection("Guard/Frontman")
+
+Section:NewButton("Become Frontman", "Become the Frontman this match.", function()
+    local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("BecomeFrontman"):InvokeServer(unpack(args))
+end)
+
+Section:NewButton("Become Guard", "Become a Guard this match.", function()
+    local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GuardRemotes"):WaitForChild("BecomeGuard"):InvokeServer(unpack(args))
+end)
