@@ -1,7 +1,8 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Green Light Red Light Gamepasses - faustino#0001", "DarkTheme")
-local Gamepasses = Window:NewTab("Gamepasses")
 local LocalPlayer = Window:NewTab("LocalPlayer")
+local Gamepasses = Window:NewTab("Gamepasses")
+local Gamehacks = Window:NewTab("Auto Wins")
 
 -- Gamepasses
 local gp = Gamepasses:NewSection("Guard/Frontman")
@@ -36,4 +37,71 @@ end)
 
 lp:NewButton("Infinity Yield", "Open an admin script (fly, jumppower, etc...)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+-- Auto Wins
+local rg = Gamehacks:NewSection("Cookie Cutter")
+rg:NewButton("Break the Game", "Spam this on cookie game if you are frontman.", function()
+local args = {
+    [1] = 1,
+    [2] = "Triangle"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("PickShape"):FireServer(unpack(args))
+
+local args = {
+    [1] = 2,
+    [2] = "Triangle"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("PickShape"):FireServer(unpack(args))
+        
+local args = {
+    [1] = 3,
+    [2] = "Triangle"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("PickShape"):FireServer(unpack(args))
+        
+local args = {
+    [1] = 4,
+    [2] = "Triangle"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("PickShape"):FireServer(unpack(args))
+end)
+
+rg:NewButton("Win Cookie Game", "Insta win cookie game.", function()
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("HoneyCombResult"):FireServer(unpack(args))
+end)
+
+local rope = Gamehacks:NewSection("Tough War")
+rope:NewButton("Pull Max Strengh", "Spam this button while on Tough War.", function()
+local args = {
+    [1] = 0.9751851540058851
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Pull"):FireServer(unpack(args))
+end)
+
+local glass = Gamehacks:NewSection("Glass Bridge")
+glass:NewButton("Break Fake Glass", "Break all the fake glasses on the brigde.", function()
+local args = {
+    [1] = 0.9751851540058851
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Pull"):FireServer(unpack(args))
+end)
+
+local misc = Gamehacks:NewSection("Misc")
+misc:NewButton("Teleport to Game", "Teleport from the lobby to the current game.", function()
+local args = {
+    [1] = workspace:WaitForChild("Mechanics"):WaitForChild("GoalPart1")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReachedGoal"):FireServer(unpack(args))
 end)
