@@ -219,3 +219,51 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ReachedGoal"):FireServer(unpack(args))
 end)
+
+rope:NewButton("Kick Team 1", "Click just once or it will break the game.", function()
+local args = {
+    [1] = {
+        [1] = "Team1",
+        [2] = "Team1"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("SelectMatch"):FireServer(unpack(args))
+end)
+
+rope:NewButton("Kick Team 2", "Click just once or it will break the game.", function()
+local args = {
+    [1] = {
+        [1] = "Team2",
+        [2] = "Team2"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("SelectMatch"):FireServer(unpack(args))
+end)
+
+rope:NewButton("Kick Team 3", "Click just once or it will break the game.", function()
+local args = {
+    [1] = {
+        [1] = "Team3",
+        [2] = "Team3"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("SelectMatch"):FireServer(unpack(args))
+end)
+
+rope:NewButton("Kick Team 4", "Click just once or it will break the game.", function()
+local args = {
+    [1] = {
+        [1] = "Team4",
+        [2] = "Team4"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("SelectMatch"):FireServer(unpack(args))
+end)
+
+rope:NewButton("To kick you need to be frontman", "Press the team you wanna quick when choosing the teams.", function()
+    print('Info')
+end)
