@@ -263,7 +263,3 @@ local args = {
 
 game:GetService("ReplicatedStorage"):WaitForChild("FrontmanRemotes"):WaitForChild("SelectMatch"):FireServer(unpack(args))
 end)
-
-rope:NewButton("To kick you need to be frontman", "Press the team you wanna quick when choosing the teams.", function()
-    print('Info')
-end)
