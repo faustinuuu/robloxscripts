@@ -91,10 +91,124 @@ end)
 local glass = Gamehacks:NewSection("Glass Bridge")
 glass:NewButton("Break Fake Glass", "Break all the fake glasses on the brigde.", function()
 local args = {
-    [1] = 0.9751851540058851
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("1R")
 }
 
-game:GetService("ReplicatedStorage"):WaitForChild("Pull"):FireServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("1L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("2R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("2L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("3R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("3L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("4R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("4L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("5R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("5L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("6R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("6L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("7R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("7L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("8R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("8L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("9R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("9L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("10R")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("Glass"):WaitForChild("10L")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("BreakGlass"):FireServer(unpack(args))
 end)
 
 local misc = Gamehacks:NewSection("Misc")
